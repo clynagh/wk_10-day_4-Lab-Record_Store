@@ -13,5 +13,9 @@ it("Does record store has name", function(){
   assert.strictEqual(highFidelity.name, "highFidelity")
 })
 
+it("Does record store has a city", function(){
+  assert.strictEqual(highFidelity.city, "Pittsburgh")
+})
+
 
 })
