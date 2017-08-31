@@ -17,5 +17,9 @@ it("Does record store has a city", function(){
   assert.strictEqual(highFidelity.city, "Pittsburgh")
 })
 
+it("Does record store have an empty inventory on create", function(){
+  assert.strictEqual(highFidelity.inventory.length, 0)
+})
+
 
 })
