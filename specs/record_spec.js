@@ -27,6 +27,10 @@ it("Should have a price", function(){
   assert.strictEqual(diamondDogs.price, 20.00)
 })
 
+it("return details string", function(){
+  assert.strictEqual(diamondDogs.getDetails(), "David Bowie, Diamond Dogs, Rock, 20")
+})
+
 
 
 
