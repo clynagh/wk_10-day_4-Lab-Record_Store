@@ -19,5 +19,19 @@ RecordStore.prototype.getInventory = function(){
   return inventoryString;
 }
 
+RecordStore.prototype.sellRecord = function( title ){
+  for ( var index = 0 ; index < this.inventory.length; index++ ){
+    if ( this.inventory[index].title === title ){
+      var record = this.inventory.splice(index,1)
+    }
+  }
+  this.balance += record[0].price;
+  return record[0];
+}
+
+
+
+
+
 
 module.exports = RecordStore;

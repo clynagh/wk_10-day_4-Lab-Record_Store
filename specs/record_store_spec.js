@@ -43,4 +43,13 @@ it("Should be able to return getDetails for all records in inventory", function(
   assert.strictEqual(highFidelity.getInventory(), inventoryString)
 })
 
+it ( "should be able to sell a record", function(){
+    highFidelity.addRecord( diamondDogs );
+    highFidelity.addRecord( greenRiver );
+    var record = highFidelity.sellRecord( "Green River" );
+    assert.strictEqual( record, greenRiver );
+    assert.strictEqual( highFidelity.balance, 24);
+    assert.strictEqual( highFidelity.inventory.length, 1);
+  })
+
 })
