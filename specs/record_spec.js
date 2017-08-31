@@ -7,7 +7,7 @@ describe("Record", function(){
 
   var diamondDogs;
 
-  beforeEach( funcition(){
+  beforeEach( function(){
     diamondDogs = new Record("David Bowie", "Diamond Dogs", "Rock", 20.00)
   });
 
