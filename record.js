@@ -11,7 +11,6 @@ Record.prototype.getDetails = function(){
   details += this.title + ", "
   details += this.genre + ", "
   details += this.price
-  console.log (details);
   return details
 }
 
