@@ -30,5 +30,9 @@ it("Should be able to add record to inventory", function(){
   assert.strictEqual(highFidelity.inventory.length, 1)
 })
 
+it("Does record store have a zero balance on create", function(){
+  assert.strictEqual(highFidelity.balance, 0)
+})
+
 
 })
