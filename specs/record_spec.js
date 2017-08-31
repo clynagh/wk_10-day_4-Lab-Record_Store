@@ -1,5 +1,5 @@
 var assert = require("assert")
-var arrayTasks = require("../record.js")
+var Record = require("../record.js")
 
 
 
@@ -23,7 +23,7 @@ it("Should have a genre", function(){
   assert.strictEqual(diamondDogs.genre, "Rock")
 })
 
-it("Should have a title", function(){
+it("Should have a price", function(){
   assert.strictEqual(diamondDogs.price, 20.00)
 })
 
